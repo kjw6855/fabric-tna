@@ -87,6 +87,16 @@ public class MockReadRequest implements P4RuntimeReadClient.ReadRequest {
     }
 
     @Override
+    public P4RuntimeReadClient.ReadRequest allTableEntries() {
+        return this;
+    }
+
+    @Override
+    public P4RuntimeReadClient.ReadRequest allDefaultTableEntries() {
+        return this;
+    }
+
+    @Override
     public P4RuntimeReadClient.ReadRequest actionProfileGroups(PiActionProfileId actionProfileId) {
         return this;
     }
